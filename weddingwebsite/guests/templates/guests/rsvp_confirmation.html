@@ -1,30 +1,29 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block page_head %}
-    <link href="{% static 'bigday/css/rsvp-confirmation.css' %}" rel="stylesheet" xmlns="http://www.w3.org/1999/html">
+    <link href="{% static 'wedding/css/rsvp-confirmation.css' %}" rel="stylesheet" xmlns="http://www.w3.org/1999/html">
 {% endblock %}
 {% block page_content %}
     <div class="layer"></div>
     <div class="container" id="main">
-        <h2>Hi {{ event.name }}! Thanks for your response!</h2>
+        <h2>Hi! Thanks for your response!</h2>
         {% if event.any_guests_attending %}
             <p>
-                We can't wait to celebrate with you in Niagara!
+                We can't wait to celebrate with you!
             </p>
             <p>
-                If you've got a minute, you can help us out by filling in a <a href="http://goo.gl/forms/AFszTcpPRW">super quick survey</a> that will help us plan for the most fun and smooth event possible.
                 If you have any other questions, don't hesitate to email us at <a href="mailto:{{ support_email }}">{{ support_email }}</a>.
             </p>
         {% else %}
             <p>
-                We're sorry you won't be able to join us in Niagara.
+                We're sorry you won't be able to join us on our wedding day :(
             </p>
             <p>
                 We look forward to catching up with you some other time!
             </p>
         {% endif %}
         <p>
-            - Cory and Rowena
+            - Justyna & Łukasz
         </p>
     </div>
 {% endblock %}

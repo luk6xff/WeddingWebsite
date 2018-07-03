@@ -15,7 +15,6 @@ class Event(models.Model):
     A event consists of one or more guests.
     """
     name = models.TextField()
-    invitation_id = models.CharField(max_length=32, db_index=True, default=_random_uuid, unique=True)
     invitation_closed = models.DateTimeField(null=True, blank=True, default=None)
     comments = models.TextField(null=True, blank=True)
 
@@ -54,12 +53,10 @@ class Guest(models.Model):
     last_name = models.TextField(null=True, blank=True)
     email = models.TextField(null=True, blank=True)
     phone_number = models.TextField(null=True, blank=True)
+    is_invited = models.BooleanField(default=False)
     is_attending = models.NullBooleanField(default=None)
     is_child = models.BooleanField(default=False)
     use_hotel = models.BooleanField(default=False)
-    invitation_id = models.CharField(max_length=32, db_index=True, default=_random_uuid, unique=True)
-    invitation_sent = models.DateTimeField(null=True, blank=True, default=None)
-    is_invited = models.BooleanField(default=False)
     language = models.CharField(max_length=10, choices=LANGUAGE, default=LANGUAGE[0])
     comments = models.TextField(null=True, blank=True)
 
