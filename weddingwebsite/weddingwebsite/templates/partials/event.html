@@ -1,31 +1,33 @@
+{% load i18n %}
 <section id="wedding-ceremony" class="bg-dark">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 ">
-                <h2 class="section-heading text-center">Ceremonia ślubna</h2>
+                <h2 class="section-heading text-center">{% trans "Wedding ceremony" %}</h2>
                 <hr class="primary">
                 <dl class="dl-horizontal lead">
                     <dd>
-                        Zapraszamy wszystkich chętnych na ceremonie zaślubin : )
+                        {% trans "Everyone is kindly invited for our wedding ceremony" %} :)
                     </dd>
-                    <dt>Kiedy?</dt>
-                    <dd>Sobota, 27 października, godz. 15:30</dd>
-                    <dt>Gdzie</dt>
+                    <dt>{% trans "When" %}</dt>
+                    <dd>{% trans "Saturday, 27th October 2018, at 15:30" %} </dd>
+                    <dt>{% trans "Where" %}</dt>
                     <dd>
                            
                         <address>
-                            Kościół pod wezwaniem Miłosierdzia Bożego w Wielogłowach koło Nowego Sącza
+                                {% trans "Church of Miłosierdzia Bożego in Wielogłowy near Nowy Sącz" %}
                             <br>
-                                <a href=" https://www.google.pl/maps/place/Parafia+pod+wezwaniem+Wniebowzi%C4%99cia+Naj%C5%9Bwi%C4%99tszej+Maryi+Panny/@49.6727939,20.6922018,15z/data=!4m5!3m4!1s0x0:0x4018b89ca5e68456!8m2!3d49.6727939!4d20.6922018">Kościół w Wielogłowach</a>
+                                <a href=" https://www.google.pl/maps/place/Parafia+pod+wezwaniem+Wniebowzi%C4%99cia+Naj%C5%9Bwi%C4%99tszej+Maryi+Panny/@49.6727939,20.6922018,15z/data=!4m5!3m4!1s0x0:0x4018b89ca5e68456!8m2!3d49.6727939!4d20.6922018">
+                                    {% trans "Church in Wielogłowy - map" %}</a>
                             <br>
                         </address>    
         
                     </dd>
                     <dt>Transport</dt>
-                    <dd>Transport do kościoła we własnym zakresie. Dla gości hotelowych bus z wyjazdem o godzinie 15</dd>
-                    <dt>Parking</dt>
-                    <dd>Dostępny duży parking przy kościele</dd>
-                    <dt>Dodatkowe informacje</dt>
+                    <dd>{% trans "Transport to church and back to the hotel on your own. For hotel's guests, there will be a bus transport to wedding ceremony at 15 o'clock. After the holly wedding mass, the same bus will deliver guests to the hotel." %}</dd>
+                    <dt>{% trans "Parking space" %}</dt>
+                    <dd>{% trans "A big parking lot available at church space" %}</dd> 
+                    <dt>{% trans "Additional information" %}</dt>
                     <dd>
 
                     </dd>
@@ -38,28 +40,29 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 ">
-                <h2 class="section-heading text-center">Przyjęcie weselne</h2>
+                <h2 class="section-heading text-center">{% trans "Wedding party" %}</h2>
                 <hr class="primary">
                 <dl class="dl-horizontal lead">
-                    <dd>Impreza odbędzie się w malowniczej miejscowości Tęgoborze w hotelu położonym nad Jeziorem Rożnowskim</dd>
-                    <dt>Kiedy</dt>
-                    <dd>Sobota, 27 października, godz. 17:00</dd>
-                    <dt>Gdzie</dt>
+                    <dd>{% trans "The wedding party will take place in Tęgoborze village, on the shore of Rożnowskie Lake" %}</dd>
+                    <dt>{% trans "When" %}</dt>
+                    <dd>{% trans "Saturday, 27th October 2018, at 17:00" %}</dd>
+                    <dt>{% trans "Where" %}</dt>
                     <dd>
                         <address>
                                 Hotel "Litwiński" - Tęgoborze
                                 <br>
-                                    <a href="https://www.google.pl/maps/place/Hotel+Litwi%C5%84ski/@49.706755,20.6386623,17z/data=!3m1!4b1!4m7!3m6!1s0x473df43a413b4671:0x8645690d589a2cd9!5m1!1s2018-07-03!8m2!3d49.706755!4d20.640851">Tęgoborze 336, 33-312 Tęgoborze, Polska</a>
+                                    <a href="https://www.google.pl/maps/place/Hotel+Litwi%C5%84ski/@49.706755,20.6386623,17z/data=!3m1!4b1!4m7!3m6!1s0x473df43a413b4671:0x8645690d589a2cd9!5m1!1s2018-07-03!8m2!3d49.706755!4d20.640851">
+                                        {% trans "Hotel Litwiński - map" %}</a>
                                 <br>
                         </address>
                     </dd>
                     <dt>Transport</dt>
                     <dd>
-                        Po mszy świętej będzie możliwość dojazdu busem do hotelu.
+                        {% trans "There will be a bus waiting to deliver guests to the hotel after the wedding ceremony" %}
                     </dd>
-                    <dt>Parking</dt>
-                    <dd>Dostępny duży parking przy hotelu</dd>
-                    <dt>Dodatkowe informacje</dt>
+                    <dt>{% trans "Parking space" %}</dt>
+                    <dd>{% trans "A big parking lot available at the hotel area" %}</dd> 
+                    <dt>{% trans "Additional information" %}</dt>
                     <dd>
 
                     </dd>

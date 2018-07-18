@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-18 20:05+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
+"%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
+"%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+#: weddingwebsite/templates/home.html:14
+msgid "Justyna & Łukasz's wedding website"
+msgstr ""
+
+#: weddingwebsite/templates/home.html:21
+msgid "Home"
+msgstr "Start"
+
+#: weddingwebsite/templates/home.html:24
+msgid "Wedding infos"
+msgstr "Informacje weselne"
+
+#: weddingwebsite/templates/home.html:27 weddingwebsite/templates/home.html:101
+#: weddingwebsite/templates/partials/ourstory.html:5
+msgid "Our story"
+msgstr "Nasza historia"
+
+#: weddingwebsite/templates/home.html:30
+msgid "Contact"
+msgstr "Kontakt"
+
+#: weddingwebsite/templates/home.html:51
+msgid "Welcome!"
+msgstr "Witamy!"
+
+#: weddingwebsite/templates/home.html:54
+msgid ""
+"Hello dear friends. That's great you visited our wedding page. You will find "
+"here all the information concerning our"
+msgstr ""
+"Witajcie na naszej stronie weselnej. Znajdziecie tutaj wszystkie informacje "
+"dotyczące"
+
+#: weddingwebsite/templates/home.html:54
+msgid "the wedding day"
+msgstr "dnia naszego ślubu"
+
+#: weddingwebsite/templates/home.html:57
+msgid "To confirm your presence at our wedding party, please send an email to"
+msgstr ""
+"W celu potwierdzenia lub odmówienia obecności na przyjęciu weselnym wyślij "
+"email na"
+
+#: weddingwebsite/templates/home.html:61
+msgid "Looking forward to seeing everyone on 27.10.2018"
+msgstr "Czekamy na was, Do zobaczenia  w dniu 27.10.2018"
+
+#: weddingwebsite/templates/home.html:77
+#: weddingwebsite/templates/partials/event.html:6
+msgid "Wedding ceremony"
+msgstr "Ceremonia zaślubin"
+
+#: weddingwebsite/templates/home.html:89
+#: weddingwebsite/templates/partials/event.html:43
+msgid "Wedding party"
+msgstr "Impreza weselna"
+
+#: weddingwebsite/templates/home.html:118
+msgid "Contact us!"
+msgstr "Skontaktuj się z nami"
+
+#: weddingwebsite/templates/home.html:120
+msgid "If you have any questions, feel free to contact us"
+msgstr "W razie jakichkolwiek pytań, skontaktuj się z nami"
+
+#: weddingwebsite/templates/partials/event.html:10
+msgid "Everyone is kindly invited for our wedding ceremony"
+msgstr "Zapraszamy wszystkich na mszę świętą ślubną"
+
+#: weddingwebsite/templates/partials/event.html:12
+#: weddingwebsite/templates/partials/event.html:47
+msgid "When"
+msgstr "Kiedy"
+
+#: weddingwebsite/templates/partials/event.html:13
+msgid "Saturday, 27th October 2018, at 15:30"
+msgstr "Sobota, 27 października 2018, o godzinie 15:30"
+
+#: weddingwebsite/templates/partials/event.html:14
+#: weddingwebsite/templates/partials/event.html:49
+msgid "Where"
+msgstr "Gdzie"
+
+#: weddingwebsite/templates/partials/event.html:18
+msgid "Church of Miłosierdzia Bożego in Wielogłowy near Nowy Sącz"
+msgstr ""
+"Kościół pod wezwaniem Miłosierdzia Bożego w Wielogłowach koło Nowego Sącza"
+
+#: weddingwebsite/templates/partials/event.html:21
+msgid "Church in Wielogłowy - map"
+msgstr "Kościół w Wielogłowach - mapa dojazdu"
+
+#: weddingwebsite/templates/partials/event.html:27
+msgid ""
+"Transport to church and back to the hotel on your own. For hotel's guests, "
+"there will be a bus transport to wedding ceremony at 15 o'clock. After the "
+"holly wedding mass, the same bus will deliver guests to the hotel."
+msgstr ""
+"Transport do kościoła we własnym zakresie. Dla gości hotelowych bus z "
+"wyjazdem o godzinie 15:00"
+
+#: weddingwebsite/templates/partials/event.html:28
+#: weddingwebsite/templates/partials/event.html:63
+msgid "Parking space"
+msgstr "Parking"
+
+#: weddingwebsite/templates/partials/event.html:29
+msgid "A big parking lot available at church space"
+msgstr "Dostępny duży parking przy kościele"
+
+#: weddingwebsite/templates/partials/event.html:30
+#: weddingwebsite/templates/partials/event.html:65
+msgid "Additional information"
+msgstr "Dodatkowe informacje"
+
+#: weddingwebsite/templates/partials/event.html:46
+msgid ""
+"The wedding party will take place in Tęgoborze village, on the shore of "
+"Rożnowskie Lake"
+msgstr ""
+"Impreza odbędzie się w malowniczej miejscowości Tęgoborze w hotelu położonym "
+"nad Jeziorem Rożnowskim"
+
+#: weddingwebsite/templates/partials/event.html:48
+msgid "Saturday, 27th October 2018, at 17:00"
+msgstr "Sobota, 27 października 2018, o godzinie 17:00 (po mszy świętej)"
+
+#: weddingwebsite/templates/partials/event.html:55
+msgid "Hotel Litwiński - map"
+msgstr "Hotel Litwiński - mapa dojazdu"
+
+#: weddingwebsite/templates/partials/event.html:61
+msgid ""
+"There will be a bus waiting to deliver guests to the hotel after the wedding "
+"ceremony"
+msgstr "Po mszy świętej będzie możliwość dojazdu busem do hotelu"
+
+#: weddingwebsite/templates/partials/event.html:64
+msgid "A big parking lot available at the hotel area"
+msgstr "Dostępny duży parking przy hotelu"
+
+#: weddingwebsite/templates/partials/footer.html:4
+msgid "designed and built by Justyna & Łukasz"
+msgstr "zaprojektowano i zbudowano przez Justynkę i Łukasza"
+
+#: weddingwebsite/templates/partials/ourstory.html:8
+msgid "Justynka and Łukasz met in the internet - End of story"
+msgstr "Justynka i Łukaszek poznali się 4 lata temu w Krakowie : )"

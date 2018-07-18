@@ -39,8 +39,7 @@ class Event(models.Model):
 
 LANGUAGE = [
     ('PL', 'polski'),
-    ('ENG','english'),
-    ('DE', 'deutsch')
+    ('ENG','english')
 ]
 
 
