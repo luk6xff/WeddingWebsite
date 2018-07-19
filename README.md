@@ -12,12 +12,13 @@ My wedding website
 
 ## Application setup
 * $ cd weddingwebsite
+* $ python manage.py createsuperuser
 * $ python manage.py makemigrations
 * $ python manage.py migrate
 * $ python manage.py collectstatic
 
 ##Test the app: 
-* $ python manage.py runserver 
+* $ python manage.py runserver 80
 * OR
 * $ gunicorn weddingwebsite.wsgi
-* goto: *localhost:8000*
+* goto: *localhost:80*
