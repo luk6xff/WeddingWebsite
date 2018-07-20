@@ -10,8 +10,9 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
 from django.views.generic import ListView
 from guests import csv_import
-from guests.rsvp import guess_guest_by_id_or_404
 from guests.models import Guest
+from .forms import RsvpForm
+
 
 
 class GuestListView(ListView):
@@ -37,32 +38,14 @@ def dashboard(request):
     })
 
 
-def rsvp(request, guest_id):
-    guest = guess_guest_by_id_or_404(guest_id)
-    if guest.invitation_opened is None:
-        guest.invitation_opened = datetime.utcnow()
-        guest.save()
+def rsvp(request):
     if request.method == 'POST':
-        print(request.POST) #TODO
-        if request.POST.get('comments'):
-            comments = request.POST.get('comments')
-            guest.comments = comments if not guest.comments else '{}; {}'.format(guest.comments, comments)
-        guest.is_attending = guest.any_guests_attending
-        guest.save()
-        return HttpResponseRedirect(reverse('rsvp-confirm', args=[guest_id]))
-    return render(request, template_name='guests/rsvp.html', context={
-        'guest': guest,
-    })
+        form = RsvpForm(request.POST)
+        if form.is_valid():
+            print("sending email")
+    else:
+        form = RsvpForm()
+    return render(request, 'guests/rsvp.html', {'form': form})
 
 
-def rsvp_confirm(request, guest_id=None):
-    guest = guess_guest_by_id_or_404(guest_id)
-    return render(request, template_name='guests/rsvp_confirmation.html', context={
-        'guest': guest,
-        'support_email': settings.DEFAULT_WEDDING_REPLY_EMAIL,
-    })
 
-
-def _base64_encode(filepath):
-    with open(filepath, "rb") as image_file:
-        return base64.b64encode(image_file.read())
