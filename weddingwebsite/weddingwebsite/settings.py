@@ -129,11 +129,7 @@ STATICFILES_DIRS = [
 ]
 
 # My settings
-# the address your emails (save the dates/invites/etc.) will come from
-DEFAULT_WEDDING_FROM_EMAIL = 'lukasz.uszko@gmail.com>'
-# the default reply-to of your emails
-DEFAULT_WEDDING_REPLY_EMAIL = 'lukasz.uszko@gmail.com'
-
-# when sending test emails it will use this address
-DEFAULT_WEDDING_TEST_EMAIL = DEFAULT_WEDDING_FROM_EMAIL
-WEDDING_CC_LIST = []  # put email addresses here if you want to cc someone on all your invitations
+CONTACT_INFO = (
+                 {'name': 'Łukasz', 'email':'lukasz.uszko@gmail.com',   'phone':'+48 506 305 438'},
+                 {'name': 'Justyna','email':'justyna12pajak@gmail.com', 'phone':'+48 515 323 976'},
+               )

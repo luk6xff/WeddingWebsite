@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 22:51+0200\n"
+"POT-Creation-Date: 2018-07-23 23:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,24 +20,24 @@ msgstr ""
 "%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
 "%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
-#: weddingwebsite/templates/home.html:14
+#: weddingwebsite/templates/home.html:12
 msgid "Justyna & Łukasz's wedding website"
 msgstr "Strona weselna Justyny i Łukasza"
 
-#: weddingwebsite/templates/home.html:21
+#: weddingwebsite/templates/home.html:19
 msgid "Home"
 msgstr "Start"
 
-#: weddingwebsite/templates/home.html:24
+#: weddingwebsite/templates/home.html:22
 msgid "Wedding infos"
 msgstr "Informacje weselne"
 
-#: weddingwebsite/templates/home.html:27 weddingwebsite/templates/home.html:101
+#: weddingwebsite/templates/home.html:28 weddingwebsite/templates/home.html:104
 #: weddingwebsite/templates/partials/ourstory.html:5
 msgid "Our story"
 msgstr "Nasza historia"
 
-#: weddingwebsite/templates/home.html:30
+#: weddingwebsite/templates/home.html:31
 msgid "Contact"
 msgstr "Kontakt"
 
@@ -46,42 +46,42 @@ msgid "Welcome!"
 msgstr "Witamy!"
 
 #: weddingwebsite/templates/home.html:54
-msgid ""
-"Hello dear friends. That's great you visited our wedding page. You will find "
-"here all the information concerning our"
-msgstr ""
-"Witajcie na naszej stronie weselnej. Znajdziecie tutaj wszystkie informacje "
-"dotyczące"
+msgid "Hello dear friends. That's great you visited our wedding page."
+msgstr "Witajcie drodzy goście na naszej stronie weselnej."
 
-#: weddingwebsite/templates/home.html:54
-msgid "the wedding day"
+#: weddingwebsite/templates/home.html:54 weddingwebsite/templates/home.html:57
+msgid "wedding day"
 msgstr "dnia naszego ślubu"
 
 #: weddingwebsite/templates/home.html:57
+msgid "You will find here all the information concerning our"
+msgstr "Znajdziecie tutaj wszystkie informacje dotyczące"
+
+#: weddingwebsite/templates/home.html:60
 msgid "To confirm your presence at our wedding party, please send an email to"
 msgstr ""
 "W celu potwierdzenia lub odmówienia obecności na przyjęciu weselnym wyślij "
 "email na"
 
-#: weddingwebsite/templates/home.html:61
+#: weddingwebsite/templates/home.html:64
 msgid "Looking forward to seeing everyone on 27.10.2018"
 msgstr "Czekamy na was, Do zobaczenia  w dniu 27.10.2018"
 
-#: weddingwebsite/templates/home.html:77
+#: weddingwebsite/templates/home.html:80
 #: weddingwebsite/templates/partials/event.html:6
 msgid "Wedding ceremony"
 msgstr "Ceremonia zaślubin"
 
-#: weddingwebsite/templates/home.html:89
+#: weddingwebsite/templates/home.html:92
 #: weddingwebsite/templates/partials/event.html:43
 msgid "Wedding party"
 msgstr "Impreza weselna"
 
-#: weddingwebsite/templates/home.html:118
+#: weddingwebsite/templates/home.html:120
 msgid "Contact us!"
 msgstr "Skontaktuj się z nami"
 
-#: weddingwebsite/templates/home.html:120
+#: weddingwebsite/templates/home.html:122
 msgid "If you have any questions, feel free to contact us"
 msgstr "W razie jakichkolwiek pytań, skontaktuj się z nami"
 
@@ -162,9 +162,15 @@ msgid "A big parking lot available at the hotel area"
 msgstr "Dostępny duży parking przy hotelu"
 
 #: weddingwebsite/templates/partials/footer.html:4
-msgid "designed and built by Justyna & Łukasz"
-msgstr "zaprojektowano i zbudowano przez Justynkę i Łukasza"
+#, fuzzy
+#| msgid "designed and built by Justyna & Łukasz"
+msgid "made by Justyna & Łukasz"
+msgstr "stworzone przez Justynkę i Łukasza"
 
 #: weddingwebsite/templates/partials/ourstory.html:8
-msgid "Justynka and Łukasz met in the internet - End of story"
-msgstr "Justynka i Łukaszek poznali się 4 lata temu w Krakowie : )"
+msgid ""
+"Justynka and Łukasz met many years ago and since that time they could not "
+"live without themselves anymore"
+msgstr ""
+"Justynka i Łukasz poznali się wiele lat temu, i od tego czasu aż po dziś "
+"dzień żyć bez siebie nie mogą"

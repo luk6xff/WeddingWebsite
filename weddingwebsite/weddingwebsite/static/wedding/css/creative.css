@@ -58,7 +58,7 @@ p {
 }
 
 .bg-primary a {
-    color: #fff;
+    color: rgb(206, 240, 222);
     font-weight: bold;
 }
 
@@ -66,6 +66,16 @@ p {
     color: #fff;
     background-color: #222;
 }
+
+.welcome .section-heading {
+    font-size: 40px;
+}
+
+.welcome p{
+    font-size: 20px;
+}
+
+
 
 .text-faded {
     color: rgba(255,255,255,.7);
@@ -83,10 +93,19 @@ aside {
     padding: 0;
 }
 
+.icon{
+    text-align: center;
+}
+
+.bg-navbar {
+    color: #57c01f;
+    background-color: rgb(206, 240, 222);
+}
+
 .navbar-default {
     border-color: rgba(34,34,34,.05);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    background-color: #fff;
+    background-color: rgb(206, 240, 222);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -101,7 +120,7 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: #57c01f;
 }
 
 .navbar-default .nav > li>a,
@@ -112,14 +131,14 @@ aside {
     color: rgb(28,56,81);
 }
 
-.navbar-default .nav > li>a:hover,
-.navbar-default .nav>li>a:focus:hover {
-    color: #f05f40;
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color:  rgba(247, 163, 38, 0.89);   
+    color: rgb(28,56,81);
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #f05f40!important;
+    color: #f1f7f3!important;
     background-color: transparent;
 }
 
@@ -127,6 +146,10 @@ aside {
 .navbar-default .nav>li.active>a:focus:hover {
     background-color: transparent;
 }
+
+.navbar-toggler {
+    border-color: rgb(0,0,0);
+} 
 
 @media(min-width:768px) {
     .navbar-default {
@@ -140,7 +163,7 @@ aside {
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
-        color: #fff;
+        color: rgb(206, 240, 222);
     }
 
     .navbar-default .nav > li>a,
@@ -155,9 +178,12 @@ aside {
 
     .navbar-default.affix {
         border-color: rgba(34,34,34,.05);
-        background-color: #fff;
+        background-color: rgb(206, 240, 222);
     }
 
+    .navbar-brand {
+        font-size: 25px;
+    }
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
         color: #f05f40;
@@ -193,7 +219,7 @@ header {
 }
 
 #main-header {
-    background-image: url('../images/together2.jpg')
+    background-image: url('../images/together.jpg')
 }
 
 header .header-content {
@@ -220,10 +246,6 @@ header .header-content .header-content-inner p {
     font-size: 22px;
     font-weight: 400;
     color: rgba(255,255,255);
-}
-
-#second-header {
-    background-image: url('../images/chapmans-peak-view.jpg');
 }
 
 @media(min-width:768px) {
