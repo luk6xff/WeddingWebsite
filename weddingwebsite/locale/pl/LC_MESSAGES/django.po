@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-23 23:26+0000\n"
+"POT-Creation-Date: 2018-07-24 01:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,11 @@ msgstr "Start"
 msgid "Wedding infos"
 msgstr "Informacje weselne"
 
-#: weddingwebsite/templates/home.html:28 weddingwebsite/templates/home.html:104
+#: weddingwebsite/templates/home.html:25
+msgid "Confirm"
+msgstr "Potwierdź przybycie"
+
+#: weddingwebsite/templates/home.html:28 weddingwebsite/templates/home.html:103
 #: weddingwebsite/templates/partials/ourstory.html:5
 msgid "Our story"
 msgstr "Nasza historia"
@@ -49,39 +53,45 @@ msgstr "Witamy!"
 msgid "Hello dear friends. That's great you visited our wedding page."
 msgstr "Witajcie drodzy goście na naszej stronie weselnej."
 
-#: weddingwebsite/templates/home.html:54 weddingwebsite/templates/home.html:57
-msgid "wedding day"
-msgstr "dnia naszego ślubu"
-
 #: weddingwebsite/templates/home.html:57
 msgid "You will find here all the information concerning our"
 msgstr "Znajdziecie tutaj wszystkie informacje dotyczące"
 
-#: weddingwebsite/templates/home.html:60
-msgid "To confirm your presence at our wedding party, please send an email to"
-msgstr ""
-"W celu potwierdzenia lub odmówienia obecności na przyjęciu weselnym wyślij "
-"email na"
+#: weddingwebsite/templates/home.html:57
+msgid "wedding day"
+msgstr "dnia naszego ślubu"
 
-#: weddingwebsite/templates/home.html:64
+#: weddingwebsite/templates/home.html:60
+msgid ""
+"To confirm your presence at our wedding party, please contact with us or "
+"fill the "
+msgstr ""
+"W celu potwierdzenia lub odmówienia obecności na przyjęciu weselnym "
+"skontaktuj się z nami lub wypełnij "
+
+#: weddingwebsite/templates/home.html:60
+msgid "confirmation form"
+msgstr "formularz potwierdzający"
+
+#: weddingwebsite/templates/home.html:63
 msgid "Looking forward to seeing everyone on 27.10.2018"
 msgstr "Czekamy na was, Do zobaczenia  w dniu 27.10.2018"
 
-#: weddingwebsite/templates/home.html:80
+#: weddingwebsite/templates/home.html:79
 #: weddingwebsite/templates/partials/event.html:6
 msgid "Wedding ceremony"
 msgstr "Ceremonia zaślubin"
 
-#: weddingwebsite/templates/home.html:92
+#: weddingwebsite/templates/home.html:91
 #: weddingwebsite/templates/partials/event.html:43
 msgid "Wedding party"
 msgstr "Impreza weselna"
 
-#: weddingwebsite/templates/home.html:120
+#: weddingwebsite/templates/home.html:119
 msgid "Contact us!"
 msgstr "Skontaktuj się z nami"
 
-#: weddingwebsite/templates/home.html:122
+#: weddingwebsite/templates/home.html:121
 msgid "If you have any questions, feel free to contact us"
 msgstr "W razie jakichkolwiek pytań, skontaktuj się z nami"
 
@@ -162,10 +172,8 @@ msgid "A big parking lot available at the hotel area"
 msgstr "Dostępny duży parking przy hotelu"
 
 #: weddingwebsite/templates/partials/footer.html:4
-#, fuzzy
-#| msgid "designed and built by Justyna & Łukasz"
 msgid "made by Justyna & Łukasz"
-msgstr "stworzone przez Justynkę i Łukasza"
+msgstr ""
 
 #: weddingwebsite/templates/partials/ourstory.html:8
 msgid ""
