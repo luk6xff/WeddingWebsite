@@ -8,19 +8,6 @@
     <link href="{% static 'bootstrap-4.0.0/dist/css/bootstrap.min.css' %}" rel="stylesheet">
 {% endblock %}
 {% block page_content %}
-{% if sent %}
-<section id="wedding-party" style="background-color:cornflowerblue;">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 ">
-                <h2 class="section-heading text-center">{% trans "Thank you! Your confirmation has been successfully sent" %} :)</h2>
-                <hr class="primary">
-                <a class="text-center" style="color:rgb(194, 240, 30);" href="/#">{% trans "Go back to home page" %}</a>
-            </div>
-        </div>
-    </div>
-</section>
-{% else %}
 <div class="container">
     <div class="row">
         <div class="span12">
@@ -31,13 +18,12 @@
                 {{ form|bootstrap}}
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                        <input type="submit" class="btn btn-primary" value="Send confirmation" />
+                        <input type="submit" class="btn btn-primary" value={% trans "Submit" %} />
                     </div>
                 </div>
             </form>
         </div>
     </div>
 </div>
-{% endif %}
 {% endblock %}
 

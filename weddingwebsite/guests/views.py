@@ -5,13 +5,15 @@ from datetime import datetime
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse
-from django.db.models import Count, Q
 from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
+from django.shortcuts import redirect
 from django.views.generic import ListView
 from guests import csv_import
 from guests.models import Guest
-from .forms import RsvpForm
+from .forms import RsvpForm, RsvpGuestsNumForm
+from django.core.mail import send_mail
+from django.http import Http404  
 
 
 
@@ -38,14 +40,45 @@ def dashboard(request):
     })
 
 
-def rsvp(request):
+def rsvp(request, guests_num):
+    sent = False
     if request.method == 'POST':
-        form = RsvpForm(request.POST)
+        form = RsvpForm(guests_num, request.POST)
         if form.is_valid():
-            print("sending email")
+            prepare_and_send_rsvp_email(form)
+            sent = True
     else:
-        form = RsvpForm()
-    return render(request, 'guests/rsvp.html', {'form': form})
+        if guests_num > 10 or guests_num < 1:
+            raise Http404
+        form = RsvpForm(guests_num)
+    return render(request, 'guests/rsvp.html', {'form': form, 'guests_num': guests_num, 'sent': sent})
 
 
+def rsvp_guests_num(request):
+    if request.method == 'POST':
+        form = RsvpGuestsNumForm(request.POST)
+        if form.is_valid():
+            return redirect('rsvp', guests_num=form['guests_num'].value())
+    else:
+        form = RsvpGuestsNumForm()
+    return render(request, 'guests/rsvp_guests_num.html', {'form': form})
 
+
+def prepare_and_send_rsvp_email(form):
+    cd = form.cleaned_data
+    subject = "New wedding presence confirmation from {}".format(cd['name 0'])
+    msg = "Hello Justynka & Łukasz, just got new wedding confirmation from {}\n\n\n".format(cd['name 0'])
+    msg += "SENDER_GUEST_NAME: {}\n".format(cd['name 0'])
+    msg += "PRESENCE_STATUS: {}\n".format(cd["presence_confirmation 0"])
+    msg += "HOTEL: {}\n\n".format(cd["hotel_needed 0"])
+    for key, val in cd.items():
+        if key.startswith('name') and key != 'name 0':
+            msg += "GUEST_NAME: {}\n".format(val)
+            num = key.split(' ')[1]
+            msg += "PRESENCE_STATUS: {}\n".format(cd["presence_confirmation {}".format(num)])
+            msg += "HOTEL: {}\n\n".format(cd["hotel_needed {}".format(num)])
+    msg += "EMAIL: {}\n".format(cd["email"])
+    msg += "COMMENTS: {}\n\n\n".format(cd["comments"])
+    print(cd)
+    print("sending email...")
+    send_mail(subject, msg, "lukasz.uszko@gmail.com", ("lukasz.uszko@gmail.com", "justyna12pajak@gmail.com"))

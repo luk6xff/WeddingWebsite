@@ -1,22 +1,32 @@
 from django import forms
-
+from django.utils.translation import gettext as _
+from django.utils.safestring import mark_safe
 
 
 PRESENCE_CONFIRMATION = (
-    (0, 'No I will not attend you wedding party :('), 
-    (1, 'Yes, I am going to celebrate your wedding with you :)')
+    (0, _('No, unfortunately not :(')), 
+    (1, _('Yes of course :)'))
 )
 
 HOTEL_CHOICES = (
-    (0, 'Not interested'), 
-    (1, 'Will stay in hotel')
+    (0, _('No')), 
+    (1, _('Yes'))
 )
 
-class RsvpForm(forms.Form):
-    name = forms.CharField(label='Your name:', max_length=50)
-    presence_confirmation = forms.ChoiceField(label='Are you going to attend our wedding party?', choices=PRESENCE_CONFIRMATION, widget=forms.RadioSelect)
-    hotel_needed = forms.ChoiceField(label='Do you want to stay in hotel?', choices=HOTEL_CHOICES)
-    send_email_with_info = forms.BooleanField(label='Do you want to get an email with any update?')
-    email = forms.EmailField(label='Your email:')
-    comments = forms.CharField(label='Put you comments, questions below:', widget=forms.Textarea)
+class RsvpGuestsNumForm(forms.Form):
+    guests_num = forms.IntegerField(label=_('Number of guests you want to confirm/reject presence for:'), min_value=1, max_value=10)
 
+class RsvpForm(forms.Form):
+
+    def __init__(self, n,  *args, **kwargs):
+        super(RsvpForm, self).__init__(*args, **kwargs)
+        self.fields["name 0"] = forms.CharField(label=mark_safe("<strong> {} </strong>".format(_("Your name:"))), max_length=50)
+        self.fields["presence_confirmation 0"] = forms.ChoiceField(label=_('Are you going to attend our wedding party?'), choices=PRESENCE_CONFIRMATION)
+        self.fields["hotel_needed 0"] = forms.ChoiceField(label=_('Do you want to stay in hotel during the night?'), choices=HOTEL_CHOICES)
+        for i in range(1,n):
+            self.fields["name %d" % i] = forms.CharField(label=mark_safe("<strong> {} </strong>".format(_("Guest %d name:" % i))), max_length=50)
+            self.fields["presence_confirmation %d" % i] = forms.ChoiceField(label=_('Is he/she going to attend our wedding party?'), choices=PRESENCE_CONFIRMATION)
+            self.fields["hotel_needed %d" % i] = forms.ChoiceField(label=_('Does he/she want to stay in hotel during the night?'), choices=HOTEL_CHOICES)
+        
+        self.fields["email"] = forms.EmailField(label=mark_safe("<strong> {} </strong>".format(_('If you wish to get some update info, leave us your email:'))), required=False)
+        self.fields["comments"] = forms.CharField(label=mark_safe("<strong> {} </strong>".format(_('Put your comments, questions below:'))), required=False, widget=forms.Textarea)

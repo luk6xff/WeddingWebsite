@@ -134,3 +134,9 @@ CONTACT_INFO = (
                  {'name': 'Łukasz', 'email':'lukasz.uszko@gmail.com',   'phone':'+48 506 305 438'},
                  {'name': 'Justyna','email':'justyna12pajak@gmail.com', 'phone':'+48 515 323 976'},
                )
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'lukasz.uszko@gmail.com'
+EMAIL_HOST_PASSWORD = 'tliqfpvuqysyeqrg'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
