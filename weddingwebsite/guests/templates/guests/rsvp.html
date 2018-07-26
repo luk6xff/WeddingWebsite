@@ -24,14 +24,14 @@
 <div class="container">
     <div class="row">
         <div class="span12">
-            <h2 id="rsvp-header">RSVP</h2>
+            <h2 id="rsvp-header">{% trans "RSVP" %}</h2>
             <hr />
             <form data-toggle="validator" id="rsvp-details" method="post" role="form" class="form-vertical">
                 {% csrf_token %}
                 {{ form|bootstrap}}
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                        <input type="submit" class="btn btn-primary" value="Send confirmation" />
+                        <input type="submit" class="btn btn-primary" value={% trans "Send confirmation" %} />
                     </div>
                 </div>
             </form>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-25 00:25+0000\n"
+"POT-Creation-Date: 2018-07-26 21:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgstr "Nie, niestety nie :("
 
 #: guests/forms.py:8
 msgid "Yes of course :)"
-msgstr "Tak, wezmę udział"
+msgstr "Tak, wezmę udział :)"
 
 #: guests/forms.py:12
 msgid "No"
@@ -38,7 +38,9 @@ msgstr "Tak"
 
 #: guests/forms.py:17
 msgid "Number of guests you want to confirm/reject presence for:"
-msgstr "Liczba gości dla których chcesz potwierdzić/odmówić udział w weselu (włącznie z Tobą)"
+msgstr ""
+"Liczba gości dla których chcesz potwierdzić/odmówić udział w weselu "
+"(włącznie z Tobą)"
 
 #: guests/forms.py:23
 msgid "Your name:"
@@ -52,34 +54,44 @@ msgstr "Czy weźmiesz udział w naszym weselu?"
 msgid "Do you want to stay in hotel during the night?"
 msgstr "Czy chcesz zarezerwować pokój hotelowy na noc weselną?"
 
-#: guests/forms.py:27
-#, python-format
-msgid "Guest %d name:"
-msgstr "Imię gościa nr %d:"
-
 #: guests/forms.py:28
+msgid "Guest %(guest_id)s name:"
+msgstr "Imię gościa nr %(guest_id)s:"
+
+#: guests/forms.py:29
 msgid "Is he/she going to attend our wedding party?"
 msgstr "Czy On/Ona weźmie udział w naszym weselu?"
 
-#: guests/forms.py:29
+#: guests/forms.py:30
 msgid "Does he/she want to stay in hotel during the night?"
-msgstr "Czy zarezerwować pokój hotelowy dla niej/jego na noc weselną?"
-
-#: guests/forms.py:31
-msgid "If you wish to get some update info, leave us your email:"
-msgstr "Jeśli chciałbyś otrzymywać powiadomienia mailowe o statusie wesela, zostaw poniżej swój email"
+msgstr "Czy zarezerwować pokój hotelowy dla Niej/Niego na noc weselną?"
 
 #: guests/forms.py:32
+msgid "If you wish to get some update info, leave us your email:"
+msgstr ""
+"Jeśli chciałbyś otrzymać powiadomienia o statusie wesela, zostaw poniżej "
+"swój email"
+
+#: guests/forms.py:33
 msgid "Put your comments, questions below:"
-msgstr "Jesli masz jakieś dodatkowe pytania czy komentarze, wpisz je poniżej"
+msgstr "Jeśli masz jakieś dodatkowe pytania czy komentarze, wpisz je poniżej"
 
 #: guests/templates/guests/rsvp.html:16
 msgid "Thank you! Your confirmation has been successfully sent"
-msgstr "Dziękujemy bardzo! Twoje potwierdzenie zostało przesłane pomyślnie"
+msgstr "Dziękujemy bardzo! Twoje potwierdzenie zostało przesłane pomyślnie : )"
 
 #: guests/templates/guests/rsvp.html:18
 msgid "Go back to home page"
 msgstr "Wróć do strony głównej"
+
+#: guests/templates/guests/rsvp.html:27
+#: guests/templates/guests/rsvp_guests_num.html:14
+msgid "RSVP"
+msgstr "Potwierdzenie zaproszenia"
+
+#: guests/templates/guests/rsvp.html:34
+msgid "Send confirmation"
+msgstr "Wyślij potwierdzenie"
 
 #: guests/templates/guests/rsvp_guests_num.html:21
 msgid "Submit"
@@ -140,7 +152,7 @@ msgstr "formularz potwierdzający"
 
 #: weddingwebsite/templates/home.html:63
 msgid "Looking forward to seeing everyone on 27.10.2018"
-msgstr "Czekamy na was, Do zobaczenia  w dniu 27.10.2018"
+msgstr "Czekamy na was :), do zobaczenia 27.10.2018!"
 
 #: weddingwebsite/templates/home.html:79
 #: weddingwebsite/templates/partials/event.html:6
@@ -162,7 +174,7 @@ msgstr "W razie jakichkolwiek pytań, skontaktuj się z nami"
 
 #: weddingwebsite/templates/partials/event.html:10
 msgid "Everyone is kindly invited for our wedding ceremony"
-msgstr "Zapraszamy wszystkich na mszę świętą ślubną"
+msgstr "Zapraszamy wszystkich na Mszę Świętą ślubną"
 
 #: weddingwebsite/templates/partials/event.html:12
 #: weddingwebsite/templates/partials/event.html:47

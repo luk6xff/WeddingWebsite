@@ -24,7 +24,7 @@ class RsvpForm(forms.Form):
         self.fields["presence_confirmation 0"] = forms.ChoiceField(label=_('Are you going to attend our wedding party?'), choices=PRESENCE_CONFIRMATION)
         self.fields["hotel_needed 0"] = forms.ChoiceField(label=_('Do you want to stay in hotel during the night?'), choices=HOTEL_CHOICES)
         for i in range(1,n):
-            self.fields["name %d" % i] = forms.CharField(label=mark_safe("<strong> {} </strong>".format(_("Guest %d name:" % i))), max_length=50)
+            self.fields["name %d" % i] = forms.CharField(label=mark_safe("<strong> {} </strong>".format(_("Guest %(guest_id)s name:") % {'guest_id': i })), max_length=50)
             self.fields["presence_confirmation %d" % i] = forms.ChoiceField(label=_('Is he/she going to attend our wedding party?'), choices=PRESENCE_CONFIRMATION)
             self.fields["hotel_needed %d" % i] = forms.ChoiceField(label=_('Does he/she want to stay in hotel during the night?'), choices=HOTEL_CHOICES)
         
