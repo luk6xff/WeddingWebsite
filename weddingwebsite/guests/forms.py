@@ -4,8 +4,8 @@ from django.utils.safestring import mark_safe
 
 
 PRESENCE_CONFIRMATION = (
-    (0, _('No, unfortunately not :(')), 
-    (1, _('Yes of course :)'))
+    (1, _('Yes of course :)')),
+    (0, _('No, unfortunately not :(')) 
 )
 
 HOTEL_CHOICES = (

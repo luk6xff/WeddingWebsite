@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 21:35+0000\n"
+"POT-Creation-Date: 2018-07-28 10:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,12 +21,12 @@ msgstr ""
 "%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
 #: guests/forms.py:7
-msgid "No, unfortunately not :("
-msgstr "Nie, niestety nie :("
-
-#: guests/forms.py:8
 msgid "Yes of course :)"
 msgstr "Tak, wezmę udział :)"
+
+#: guests/forms.py:8
+msgid "No, unfortunately not :("
+msgstr "Nie, niestety nie :("
 
 #: guests/forms.py:12
 msgid "No"
@@ -54,25 +54,26 @@ msgstr "Czy weźmiesz udział w naszym weselu?"
 msgid "Do you want to stay in hotel during the night?"
 msgstr "Czy chcesz zarezerwować pokój hotelowy na noc weselną?"
 
-#: guests/forms.py:28
+#: guests/forms.py:27
+#, python-format
 msgid "Guest %(guest_id)s name:"
 msgstr "Imię gościa nr %(guest_id)s:"
 
-#: guests/forms.py:29
+#: guests/forms.py:28
 msgid "Is he/she going to attend our wedding party?"
 msgstr "Czy On/Ona weźmie udział w naszym weselu?"
 
-#: guests/forms.py:30
+#: guests/forms.py:29
 msgid "Does he/she want to stay in hotel during the night?"
 msgstr "Czy zarezerwować pokój hotelowy dla Niej/Niego na noc weselną?"
 
-#: guests/forms.py:32
+#: guests/forms.py:31
 msgid "If you wish to get some update info, leave us your email:"
 msgstr ""
-"Jeśli chciałbyś otrzymać powiadomienia o statusie wesela, zostaw poniżej "
-"swój email"
+"Jeśli chciałbyś otrzymać powiadomienia o ważnych sprawach dotyczących "
+"wesela, pojawieniu się galerii zdjęć ze ślubu, zostaw poniżej swój email"
 
-#: guests/forms.py:33
+#: guests/forms.py:32
 msgid "Put your comments, questions below:"
 msgstr "Jeśli masz jakieś dodatkowe pytania czy komentarze, wpisz je poniżej"
 
@@ -152,7 +153,7 @@ msgstr "formularz potwierdzający"
 
 #: weddingwebsite/templates/home.html:63
 msgid "Looking forward to seeing everyone on 27.10.2018"
-msgstr "Czekamy na was :), do zobaczenia 27.10.2018!"
+msgstr "Czekamy na was :) do zobaczenia 27.10.2018!"
 
 #: weddingwebsite/templates/home.html:79
 #: weddingwebsite/templates/partials/event.html:6
