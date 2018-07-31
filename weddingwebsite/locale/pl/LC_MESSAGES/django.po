@@ -44,7 +44,7 @@ msgstr ""
 
 #: guests/forms.py:23
 msgid "Your name:"
-msgstr "Twoje imię:"
+msgstr "Twoje imię i nazwisko:"
 
 #: guests/forms.py:24
 msgid "Are you going to attend our wedding party?"
@@ -57,7 +57,7 @@ msgstr "Czy chcesz zarezerwować pokój hotelowy na noc weselną?"
 #: guests/forms.py:27
 #, python-format
 msgid "Guest %(guest_id)s name:"
-msgstr "Imię gościa nr %(guest_id)s:"
+msgstr "Imię i nazwisko gościa nr %(guest_id)s:"
 
 #: guests/forms.py:28
 msgid "Is he/she going to attend our wedding party?"
