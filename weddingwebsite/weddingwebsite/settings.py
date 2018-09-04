@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'rtwcss9j*=m76!9wxz0a2is6cs)znhu$&ssl&y$bfu_yao899$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -142,3 +142,10 @@ CONTACT_INFO = (
                  {'name': 'Łukasz', 'email':'lukasz.uszko@gmail.com',   'phone':'+48 506 305 438'},
                  {'name': 'Justyna','email':'justyna12pajak@gmail.com', 'phone':'+48 515 323 976'},
                )
+
+# Paste your email server infos
+EMAIL_HOST = ''
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
