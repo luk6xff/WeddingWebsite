@@ -101,3 +101,7 @@ ENV/
 
 #others
 email_info
+credentials.json
+token.json
+guests.csv
+bot_config.ini
