@@ -104,4 +104,5 @@ email_info
 credentials.json
 token.json
 guests.csv
-bot_config.ini
+table_name_tags.docx
+wedding_utils_config.ini
