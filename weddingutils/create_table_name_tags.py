@@ -30,17 +30,17 @@ def create_name_table_tags_docx_for_guests_who_confirmed():
     cols_num = 2
     table = doc.add_table(rows=0, cols=cols_num)
     table.alignment = WD_TAB_ALIGNMENT.CENTER
-
+    table.style = 'Table Grid'
     for i in range(0, len(confirmed_list), cols_num):
         row = table.add_row()
         # set cell width and height
         for cell in row.cells:
             cell.width  = Mm(80)
-            cell.height = Mm(35)
+            cell.height = Mm(55)
         for col_num in range(cols_num):
             prgs = row.cells[col_num].paragraphs
             img_width = Mm(70)
-            img_height = Mm(10)
+            img_height = Mm(15)
             prgs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
             prgs[0].add_run().add_picture('flowers_name_tag_up.png', height=img_height, width=img_width)
             text_run = prgs[0].add_run()
