@@ -31,8 +31,7 @@ def generate_names_dict(guests_sheet):
     row_num = first_row_num
     while True:
         name = guests_sheet['A{}'.format(row_num)]
-        print(name)
-        if name == '' or name == None:
+        if name == '' or name == '#':
             break
         names['name'].append(name)
         names['surname'].append(guests_sheet['B{}'.format(row_num)])
