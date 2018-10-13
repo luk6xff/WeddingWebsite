@@ -1,3 +1,4 @@
+
 #!/usr/bin/python3
 
 ## Install required packets:
@@ -23,14 +24,15 @@ def extract_guests_from_wedding_sheet():
 def generate_names_dict(guests_sheet):
     if guests_sheet is None:
         raise Exception('guests_sheet is invalid!')
-    names = {'name': [], 'surname': [], 'phone': [], 'invited': [], 'confirmed': [] , 'hotel': [], 'bus': []}
+    names = {'name': [], 'surname': [], 'phone': [], 'invited': [], 'confirmed': [] , 'hotel': [], 'bus': [], 'kid': [], 'table': []}
     first_row_num = 4
-    # l side
+    # all guests
     name = '-'
     row_num = first_row_num
     while True:
         name = guests_sheet['A{}'.format(row_num)]
-        if name == '':
+        print(name)
+        if name == '' or name == None:
             break
         names['name'].append(name)
         names['surname'].append(guests_sheet['B{}'.format(row_num)])
@@ -39,21 +41,8 @@ def generate_names_dict(guests_sheet):
         names['confirmed'].append(guests_sheet['F{}'.format(row_num)])
         names['hotel'].append(guests_sheet['G{}'.format(row_num)])
         names['bus'].append(guests_sheet['H{}'.format(row_num)])
-        row_num = row_num + 1
-    # j side
-    name = '-'
-    row_num = first_row_num
-    while True:
-        name = guests_sheet['J{}'.format(row_num)]
-        if name == '':
-            break
-        names['name'].append(name)
-        names['surname'].append(guests_sheet['K{}'.format(row_num)])
-        names['phone'].append(guests_sheet['M{}'.format(row_num)])
-        names['invited'].append(guests_sheet['N{}'.format(row_num)])
-        names['confirmed'].append(guests_sheet['O{}'.format(row_num)])
-        names['hotel'].append(guests_sheet['P{}'.format(row_num)])
-        names['bus'].append(guests_sheet['Q{}'.format(row_num)])
+        names['kid'].append(guests_sheet['I{}'.format(row_num)])
+        names['table'].append(guests_sheet['J{}'.format(row_num)])
         row_num = row_num + 1
     # print(names)
     return names
