@@ -99,6 +99,11 @@ ENV/
 # mypy
 .mypy_cache/
 
+# static
+static_root/*
+media/*
+db.sqlite3
+
 #others
 email_info
 credentials.json

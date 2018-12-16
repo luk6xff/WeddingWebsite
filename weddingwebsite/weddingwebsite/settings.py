@@ -13,8 +13,8 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+BASE_DIR = os.path.dirname(os.path.realpath(__file__))
+print("BASE_DIR equals ==== ", BASE_DIR)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
@@ -25,7 +25,8 @@ SECRET_KEY = 'rtwcss9j*=m76!9wxz0a2is6cs)znhu$&ssl&y$bfu_yao899$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1','localhost']
+INTERNAL_IPS = ('0.0.0.0','127.0.0.1','localhost',)
 
 
 # Application definition
@@ -37,10 +38,18 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
+    'django.contrib.sites',
     'wedding',
     'guests',
-    'bootstrapform'
+    'bootstrapform',
+    'material',
+    'material.admin',
+    'imagekit',
+    'photo_gallery'
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -55,10 +64,16 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'weddingwebsite.urls'
 
+# TEMPLATE_LOADERS = (
+#     'django.template.loaders.filesystem.Loader',
+#     'django.template.loaders.app_directories.Loader',
+# )
+
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join('weddingwebsite', 'templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -70,6 +85,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'weddingwebsite.wsgi.application'
 
@@ -103,6 +119,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+LOGIN_REDIRECT_URL = '/admin/'
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
@@ -134,8 +151,40 @@ LOCALE_PATHS = (
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_root/')
 STATIC_URL = os.path.join(BASE_DIR, 'static/')
 STATICFILES_DIRS = [
-    os.path.join('weddingwebsite', 'static'),
+    os.path.join('wedding', 'static'),
+    os.path.join('photo_gallery', 'static'),
 ]
+
+MEDIA_URL = os.path.join(BASE_DIR, 'media/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': BASE_DIR + '/debug.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
+
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'unique-snowflake',
+    }
+}
+
 
 # My settings
 CONTACT_INFO = (

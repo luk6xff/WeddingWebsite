@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-28 10:06+0000\n"
+"POT-Creation-Date: 2018-12-16 18:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,48 +98,86 @@ msgstr "Wyślij potwierdzenie"
 msgid "Submit"
 msgstr "Potwierdź"
 
-#: weddingwebsite/templates/home.html:12
+#: photo_gallery/templates/layout.html:16
+#: photo_gallery/templates/photos.html:13
+#: photo_gallery/templates/photos.html:23
+#: photo_gallery/templates/photos.html:32
+#, fuzzy
+#| msgid "Wedding party"
+msgid "Wedding gallery"
+msgstr "Galeria zdjęć Justyny i Łukasza :)"
+
+#: photo_gallery/templates/layout.html:19
+#: photo_gallery/templates/layout.html:25
+msgid "Albums folder"
+msgstr "Folder główny"
+
+#: photo_gallery/templates/photos.html:14
+msgid "Thank you for being a part of our wedding day 27.10.2018! :)"
+msgstr "Dzięki piękne że byliście z nami tego dnia :)"
+
+#: photo_gallery/templates/photos.html:24
+msgid "Be invited to view our wedding photos :)"
+msgstr "Zapraszamy do oglądania zdjęć :)"
+
+#: photo_gallery/templates/photos.html:33
+msgid "Merry Christmas! :)"
+msgstr "Wesołych Świąt! :)"
+
+#: photo_gallery/templates/photos.html:54
+msgid "More Images"
+msgstr "Więcej zdjęć"
+
+#: photo_gallery/templates/photos.html:70
+msgid "Download all the albums"
+msgstr "Pobierz wszystkie albumy"
+
+#: wedding/templates/home.html:12
 msgid "Justyna & Łukasz's wedding website"
 msgstr "Strona weselna Justyny i Łukasza"
 
-#: weddingwebsite/templates/home.html:19
+#: wedding/templates/home.html:19
 msgid "Home"
 msgstr "Start"
 
-#: weddingwebsite/templates/home.html:22
+#: wedding/templates/home.html:22
 msgid "Wedding infos"
 msgstr "Informacje weselne"
 
-#: weddingwebsite/templates/home.html:25
+#: wedding/templates/home.html:25
 msgid "Confirm"
 msgstr "Potwierdź przybycie"
 
-#: weddingwebsite/templates/home.html:28 weddingwebsite/templates/home.html:103
-#: weddingwebsite/templates/partials/ourstory.html:5
+#: wedding/templates/home.html:28 wedding/templates/home.html:106
+#: wedding/templates/partials/ourstory.html:5
 msgid "Our story"
 msgstr "Nasza historia"
 
-#: weddingwebsite/templates/home.html:31
+#: wedding/templates/home.html:31
+msgid "Photos"
+msgstr ""
+
+#: wedding/templates/home.html:34
 msgid "Contact"
 msgstr "Kontakt"
 
-#: weddingwebsite/templates/home.html:51
+#: wedding/templates/home.html:54
 msgid "Welcome!"
 msgstr "Witamy!"
 
-#: weddingwebsite/templates/home.html:54
+#: wedding/templates/home.html:57
 msgid "Hello dear friends. That's great you visited our wedding page."
 msgstr "Witajcie drodzy goście na naszej stronie weselnej."
 
-#: weddingwebsite/templates/home.html:57
+#: wedding/templates/home.html:60
 msgid "You will find here all the information concerning our"
 msgstr "Znajdziecie tutaj wszystkie informacje dotyczące"
 
-#: weddingwebsite/templates/home.html:57
+#: wedding/templates/home.html:60
 msgid "wedding day"
 msgstr "dnia naszego ślubu"
 
-#: weddingwebsite/templates/home.html:60
+#: wedding/templates/home.html:63
 msgid ""
 "To confirm your presence at our wedding party, please contact with us or "
 "fill the "
@@ -147,60 +185,58 @@ msgstr ""
 "W celu potwierdzenia lub odmówienia obecności na przyjęciu weselnym "
 "skontaktuj się z nami lub wypełnij "
 
-#: weddingwebsite/templates/home.html:60
+#: wedding/templates/home.html:63
 msgid "confirmation form"
 msgstr "formularz potwierdzający"
 
-#: weddingwebsite/templates/home.html:63
+#: wedding/templates/home.html:66
 msgid "Looking forward to seeing everyone on 27.10.2018"
 msgstr "Czekamy na was :) do zobaczenia 27.10.2018!"
 
-#: weddingwebsite/templates/home.html:79
-#: weddingwebsite/templates/partials/event.html:6
+#: wedding/templates/home.html:82 wedding/templates/partials/event.html:6
 msgid "Wedding ceremony"
 msgstr "Ceremonia zaślubin"
 
-#: weddingwebsite/templates/home.html:91
-#: weddingwebsite/templates/partials/event.html:43
+#: wedding/templates/home.html:94 wedding/templates/partials/event.html:43
 msgid "Wedding party"
 msgstr "Impreza weselna"
 
-#: weddingwebsite/templates/home.html:119
+#: wedding/templates/home.html:122
 msgid "Contact us!"
 msgstr "Skontaktuj się z nami"
 
-#: weddingwebsite/templates/home.html:121
+#: wedding/templates/home.html:124
 msgid "If you have any questions, feel free to contact us"
 msgstr "W razie jakichkolwiek pytań, skontaktuj się z nami"
 
-#: weddingwebsite/templates/partials/event.html:10
+#: wedding/templates/partials/event.html:10
 msgid "Everyone is kindly invited for our wedding ceremony"
 msgstr "Zapraszamy wszystkich na Mszę Świętą ślubną"
 
-#: weddingwebsite/templates/partials/event.html:12
-#: weddingwebsite/templates/partials/event.html:47
+#: wedding/templates/partials/event.html:12
+#: wedding/templates/partials/event.html:47
 msgid "When"
 msgstr "Kiedy"
 
-#: weddingwebsite/templates/partials/event.html:13
+#: wedding/templates/partials/event.html:13
 msgid "Saturday, 27th October 2018, at 15:30"
 msgstr "Sobota, 27 października 2018, o godzinie 15:30"
 
-#: weddingwebsite/templates/partials/event.html:14
-#: weddingwebsite/templates/partials/event.html:49
+#: wedding/templates/partials/event.html:14
+#: wedding/templates/partials/event.html:49
 msgid "Where"
 msgstr "Gdzie"
 
-#: weddingwebsite/templates/partials/event.html:18
+#: wedding/templates/partials/event.html:18
 msgid "Church of Miłosierdzia Bożego in Wielogłowy near Nowy Sącz"
 msgstr ""
 "Kościół pod wezwaniem Miłosierdzia Bożego w Wielogłowach koło Nowego Sącza"
 
-#: weddingwebsite/templates/partials/event.html:21
+#: wedding/templates/partials/event.html:21
 msgid "Church in Wielogłowy - map"
 msgstr "Kościół w Wielogłowach - mapa dojazdu"
 
-#: weddingwebsite/templates/partials/event.html:27
+#: wedding/templates/partials/event.html:27
 msgid ""
 "Transport to church and back to the hotel on your own. For hotel's guests, "
 "there will be a bus transport to wedding ceremony at 15 o'clock. After the "
@@ -209,21 +245,21 @@ msgstr ""
 "Transport do kościoła we własnym zakresie. Dla gości hotelowych bus z "
 "wyjazdem o godzinie 15:00"
 
-#: weddingwebsite/templates/partials/event.html:28
-#: weddingwebsite/templates/partials/event.html:63
+#: wedding/templates/partials/event.html:28
+#: wedding/templates/partials/event.html:63
 msgid "Parking space"
 msgstr "Parking"
 
-#: weddingwebsite/templates/partials/event.html:29
+#: wedding/templates/partials/event.html:29
 msgid "A big parking lot available at church space"
 msgstr "Dostępny duży parking przy kościele"
 
-#: weddingwebsite/templates/partials/event.html:30
-#: weddingwebsite/templates/partials/event.html:65
+#: wedding/templates/partials/event.html:30
+#: wedding/templates/partials/event.html:65
 msgid "Additional information"
 msgstr "Dodatkowe informacje"
 
-#: weddingwebsite/templates/partials/event.html:46
+#: wedding/templates/partials/event.html:46
 msgid ""
 "The wedding party will take place in Tęgoborze village, on the shore of "
 "Rożnowskie Lake"
@@ -231,32 +267,46 @@ msgstr ""
 "Impreza odbędzie się w malowniczej miejscowości Tęgoborze w hotelu położonym "
 "nad Jeziorem Rożnowskim"
 
-#: weddingwebsite/templates/partials/event.html:48
+#: wedding/templates/partials/event.html:48
 msgid "Saturday, 27th October 2018, at 17:00"
 msgstr "Sobota, 27 października 2018, o godzinie 17:00 (po mszy świętej)"
 
-#: weddingwebsite/templates/partials/event.html:55
+#: wedding/templates/partials/event.html:55
 msgid "Hotel Litwiński - map"
 msgstr "Hotel Litwiński - mapa dojazdu"
 
-#: weddingwebsite/templates/partials/event.html:61
+#: wedding/templates/partials/event.html:61
 msgid ""
 "There will be a bus waiting to deliver guests to the hotel after the wedding "
 "ceremony"
 msgstr "Po mszy świętej będzie możliwość dojazdu busem do hotelu"
 
-#: weddingwebsite/templates/partials/event.html:64
+#: wedding/templates/partials/event.html:64
 msgid "A big parking lot available at the hotel area"
 msgstr "Dostępny duży parking przy hotelu"
 
-#: weddingwebsite/templates/partials/footer.html:4
+#: wedding/templates/partials/footer.html:4
 msgid "made by Justyna & Łukasz"
 msgstr ""
 
-#: weddingwebsite/templates/partials/ourstory.html:8
+#: wedding/templates/partials/ourstory.html:8
 msgid ""
 "Justynka and Łukasz met many years ago and since that time they could not "
 "live without themselves anymore"
 msgstr ""
 "Justynka i Łukasz poznali się wiele lat temu, i od tego czasu aż po dziś "
 "dzień żyć bez siebie nie mogą"
+
+#: weddingwebsite/settings.py:130
+msgid "English"
+msgstr ""
+
+#: weddingwebsite/settings.py:131
+msgid "Polish"
+msgstr ""
+
+#~ msgid "Thank you for being with us!"
+#~ msgstr "Dzięki że byliście z nami! :)"
+
+#~ msgid "You are welcome to see the photos"
+#~ msgstr "Zapraszamy do oglądania zdjęć"
