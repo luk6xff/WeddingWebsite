@@ -6,16 +6,18 @@ My wedding website
 * Install python 3.6 
 * $ python3 -m venv venv
 * $ source venv/bin/activate 
-* $ pip install Django==2.0.5
-* $ pip install gunicorn
+* $ cd weddingwebsite
+* $ pip install -r requirements.txt
 
 
 ## Application setup
 * $ cd weddingwebsite
-* $ python manage.py createsuperuser
-* $ python manage.py makemigrations
 * $ python manage.py migrate
+* $ python manage.py makemigrations
+* $ python manage.py createsuperuser
 * $ python manage.py collectstatic
+* $ django-admin makemessages
+* $ django-admin compilemessages
 
 ##Test the app: 
 * $ python manage.py runserver 80
