@@ -25,8 +25,8 @@ SECRET_KEY = 'rtwcss9j*=m76!9wxz0a2is6cs)znhu$&ssl&y$bfu_yao899$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1','localhost']
-INTERNAL_IPS = ('0.0.0.0','127.0.0.1','localhost',)
+ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1','localhost', 'www.uszkadwa.pl']
+INTERNAL_IPS = ('0.0.0.0','127.0.0.1','localhost')
 
 
 # Application definition
