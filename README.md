@@ -15,7 +15,7 @@ My wedding website
 * $ python manage.py migrate
 * $ python manage.py makemigrations
 * $ python manage.py createsuperuser
-* $ python manage.py collectstatic
+* $ python manage.py collectstatic --noinput --clear
 * $ django-admin makemessages
 * $ django-admin compilemessages
 

@@ -100,8 +100,8 @@ ENV/
 .mypy_cache/
 
 # static
-static_root/*
-media/*
+weddingwebsite/static_root/*
+weddingwebsite/media/*
 db.sqlite3
 
 #others
