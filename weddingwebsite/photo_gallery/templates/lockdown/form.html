@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% load staticfiles %}
+{% load bootstrap %}
+{% load i18n %}
+
+
+{% block page_head %}
+<!-- Bootstrap Core CSS -->
+<link href="{% static 'bootstrap-4.0.0/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'external/lockdownform.css' %}" type="text/css" /> 
+{% endblock %}
+
+
+{% block content %}
+<body id="LoginForm">
+  <div class="container">
+    <div class="login-form">
+      <div class="main-div">
+        <div class="panel">
+          <h2>{% trans "Confirm password" %}</h2>
+        </div>
+        {% if form %}
+        <form id="Login" action="" method="post">{% csrf_token %}
+          <div class="form-group">
+            <div class="form-group">
+                {{ form|bootstrap }}
+            </div>
+              <p><input type="submit" class="btn btn-lg btn-primary btn-block" value={% trans "Submit" %} /></p>
+          </div>
+        </form>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</body>
+{% endblock %}
+
+
+{% block js %}
+  <script src="{% static 'bootstrap-4.0.0/dist/js/bootstrap.min.js' %}"></script>
+{% endblock %}

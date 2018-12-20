@@ -16,10 +16,12 @@ from django.conf import settings
 from wsgiref.util import FileWrapper
 
 from .models import Album, AlbumImage
+from lockdown.decorators import lockdown
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.WARNING)
 
+@lockdown()
 def photos(request):
     list = Album.objects.filter(is_visible=True).order_by('-created')
     paginator = Paginator(list, 10)

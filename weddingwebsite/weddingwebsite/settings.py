@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     'photo_gallery',
     'material',
     'material.admin',
-    'imagekit'
+    'imagekit',
+    'lockdown',
 ]
 
 SITE_ID = 1
@@ -121,6 +122,12 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 LOGIN_REDIRECT_URL = '/admin/'
+
+# Lockdown setings
+import datetime
+LOCKDOWN_PASSWORDS = ('christmas2018')
+LOCKDOWN_AFTER = datetime.datetime(2018, 12, 18)
+LOCKDOWN_FORM = 'photo_gallery.forms.LockdownPasswordForm'
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-16 18:53+0100\n"
+"POT-Creation-Date: 2018-12-20 01:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,40 +95,48 @@ msgid "Send confirmation"
 msgstr "Wyślij potwierdzenie"
 
 #: guests/templates/guests/rsvp_guests_num.html:21
+#: photo_gallery/templates/lockdown/form.html:31
 msgid "Submit"
 msgstr "Potwierdź"
 
-#: photo_gallery/templates/layout.html:16
-#: photo_gallery/templates/photos.html:13
-#: photo_gallery/templates/photos.html:23
-#: photo_gallery/templates/photos.html:32
+#: photo_gallery/forms.py:18
+msgid "Please enter your password below"
+msgstr "Wpisz hasło z SMS-a poniżej"
+
+#: photo_gallery/templates/layout.html:17
 #, fuzzy
 #| msgid "Wedding party"
 msgid "Wedding gallery"
 msgstr "Galeria zdjęć Justyny i Łukasza :)"
 
-#: photo_gallery/templates/layout.html:19
-#: photo_gallery/templates/layout.html:25
+#: photo_gallery/templates/layout.html:20
+#: photo_gallery/templates/layout.html:26
 msgid "Albums folder"
 msgstr "Folder główny"
 
-#: photo_gallery/templates/photos.html:14
+#: photo_gallery/templates/lockdown/form.html:23
+#, fuzzy
+#| msgid "Confirm"
+msgid "Confirm password"
+msgstr "Potwierdź hasło dostępu do galerii"
+
+#: photo_gallery/templates/photos.html:13
 msgid "Thank you for being a part of our wedding day 27.10.2018! :)"
 msgstr "Dzięki piękne że byliście z nami tego dnia :)"
 
-#: photo_gallery/templates/photos.html:24
+#: photo_gallery/templates/photos.html:22
 msgid "Be invited to view our wedding photos :)"
 msgstr "Zapraszamy do oglądania zdjęć :)"
 
-#: photo_gallery/templates/photos.html:33
+#: photo_gallery/templates/photos.html:30
 msgid "Merry Christmas! :)"
 msgstr "Wesołych Świąt! :)"
 
-#: photo_gallery/templates/photos.html:54
+#: photo_gallery/templates/photos.html:52
 msgid "More Images"
 msgstr "Więcej zdjęć"
 
-#: photo_gallery/templates/photos.html:70
+#: photo_gallery/templates/photos.html:68
 msgid "Download all the albums"
 msgstr "Pobierz wszystkie albumy"
 
@@ -296,14 +304,6 @@ msgid ""
 msgstr ""
 "Justynka i Łukasz poznali się wiele lat temu, i od tego czasu aż po dziś "
 "dzień żyć bez siebie nie mogą"
-
-#: weddingwebsite/settings.py:130
-msgid "English"
-msgstr ""
-
-#: weddingwebsite/settings.py:131
-msgid "Polish"
-msgstr ""
 
 #~ msgid "Thank you for being with us!"
 #~ msgstr "Dzięki że byliście z nami! :)"
