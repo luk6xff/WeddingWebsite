@@ -11,7 +11,7 @@ from django.conf.urls import include
 from django.urls import path, include
 from django.contrib import admin
 
-admin.autodiscover()
+#admin.autodiscover()
 
 urlpatterns = [
     url(r'^photos$', photos, name='photos'),
