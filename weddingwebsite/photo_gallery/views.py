@@ -19,11 +19,11 @@ from .models import Album, AlbumImage
 from lockdown.decorators import lockdown
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.WARNING)
+logger.setLevel(logging.ERROR)
 
 @lockdown()
 def photos(request):
-    list = Album.objects.filter(is_visible=True).order_by('-created')
+    list = Album.objects.filter(is_visible=True).order_by('created')
     paginator = Paginator(list, 10)
     logger.info("Albums list: {}".format(list))
     page = request.GET.get('page')
@@ -65,12 +65,12 @@ def download_zipped_album(request, album_name):
 
     files = []
     for img in images:
-        files.append((img.alt, os.path.join(settings.MEDIA_URL, os.path.join(AlbumImage._meta.get_field('image').upload_to, img.alt))))
+        files.append((img.alt, os.path.join(settings.MEDIA_ROOT, os.path.join(AlbumImage._meta.get_field('image').upload_to, img.alt))))
     # create binary buffer 
     album_buffer = io.BytesIO()
     with zipfile.ZipFile(album_buffer, 'w', zipfile.ZIP_DEFLATED) as zip:
         for name, f in files:
-            logger.info(img.alt)
+            logger.info(name, f)
             zip.write(f, name)
     # flush the buffer
     album_buffer.flush()
@@ -86,7 +86,7 @@ def download_zipped_album(request, album_name):
 
 
 def download_all_zipped_albums(request):
-    albums = Album.objects.filter(is_visible=True).order_by('-created')
+    albums = Album.objects.filter(is_visible=True).order_by('created')
     if albums is None:
         logger.error("No albums in database!")
         raise Http404 
@@ -106,7 +106,7 @@ def download_all_zipped_albums(request):
 
             files = []
             for img in images:
-                files.append((img.alt, os.path.join(settings.MEDIA_URL, os.path.join(AlbumImage._meta.get_field('image').upload_to, img.alt))))
+                files.append((img.alt, os.path.join(settings.MEDIA_ROOT, os.path.join(AlbumImage._meta.get_field('image').upload_to, img.alt))))
             # save binary data 
             for name, f in files:
                 logger.warning(name)
