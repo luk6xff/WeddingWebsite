@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-20 01:04+0100\n"
+"POT-Creation-Date: 2018-12-21 21:23+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,7 +99,7 @@ msgstr "Wyślij potwierdzenie"
 msgid "Submit"
 msgstr "Potwierdź"
 
-#: photo_gallery/forms.py:18
+#: photo_gallery/forms.py:20
 msgid "Please enter your password below"
 msgstr "Wpisz hasło z SMS-a poniżej"
 
@@ -136,7 +136,13 @@ msgstr "Wesołych Świąt! :)"
 msgid "More Images"
 msgstr "Więcej zdjęć"
 
-#: photo_gallery/templates/photos.html:68
+#: photo_gallery/templates/photos.html:55
+#, fuzzy
+#| msgid "Download all the albums"
+msgid "Download the album"
+msgstr "Pobierz album"
+
+#: photo_gallery/templates/photos.html:69
 msgid "Download all the albums"
 msgstr "Pobierz wszystkie albumy"
 
@@ -304,6 +310,14 @@ msgid ""
 msgstr ""
 "Justynka i Łukasz poznali się wiele lat temu, i od tego czasu aż po dziś "
 "dzień żyć bez siebie nie mogą"
+
+#: weddingwebsite/settings.py:136
+msgid "English"
+msgstr ""
+
+#: weddingwebsite/settings.py:137
+msgid "Polish"
+msgstr ""
 
 #~ msgid "Thank you for being with us!"
 #~ msgstr "Dzięki że byliście z nami! :)"
