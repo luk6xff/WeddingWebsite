@@ -39,13 +39,15 @@ $ django-admin makemessages
 ```bash
 $ django-admin compilemessages
 ```
-##Test the app: 
-* $ python manage.py runserver 80
-* OR
+##Test the app:
 ```bash
-* $ gunicorn -d -b 0.0.0.0:80 weddingwebsite.wsgi
-
-* goto: *localhost:80*
+$ python manage.py runserver 80
+```
+OR
+```bash
+$ gunicorn -d -b 0.0.0.0:80 weddingwebsite.wsgi
+```
+then go to: ```localhost:80```
 
 ## Run the app with NGINX
 1. Install nginx:
