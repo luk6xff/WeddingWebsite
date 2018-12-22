@@ -51,13 +51,13 @@ def send_sms_to_people_without_confirmation(guests_dict, twilio_client):
         if guest['phone'] is not '-':
             print("sending sms to: {} {} - {}...".format(guest['name'], guest['surname'], guest['phone']))
             try:
-                pass#twilio_client.send_sms_msg(guest['phone'], msg_last)
+                twilio_client.send_sms_msg(guest['phone'], msg_last)
             except Exception as e:
                 print("Error: {}".format(str(e)))
                 pass
     ## test
-    #twilio_client.send_sms_msg('515 323 976', msg_1)
-    twilio_client.send_sms_msg('506 305 438', msg_last)
+    #twilio_client.send_sms_msg('515 323 976', msg_last)
+    #twilio_client.send_sms_msg('506 305 438', msg_last)
     #twilio_client.send_sms_msg('+48794195468', "Hej jestem tylko botem weselnym, wiadomości pisz do Państwa młodych: Justyna: 515323976, Łukasz: 506305438. Pozdrawiam pięknie")
 # main
 if __name__ == "__main__":
