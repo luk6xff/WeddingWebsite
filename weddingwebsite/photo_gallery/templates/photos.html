@@ -7,7 +7,7 @@
 <div class="slider">
     <ul class="slides">
         <li>
-            <img src="{% static 'images/rsz_all.jpg' %}" alt="Wedding gallery" class="opaque">
+            <img src="{% static 'images/rsz_all.jpg' %}" class="img-fluid" alt="Wedding gallery" class="opaque">
             <div class="caption left-align">
                 <h1 style="transform: translateY(-80%); height:120%;">
                     <small class="light text-lighten-3 hide-on-small-only">{% trans "Thank you for being a part of our wedding day 27.10.2018! :)" %}</small>
@@ -15,7 +15,7 @@
             </div>
         </li>
         <li>
-            <img src="{% static 'images/rsz_family.jpg' %}" alt="Wedding gallery" class="opaque" style="height:200%;">
+            <img src="{% static 'images/rsz_family.jpg' %}" class="img-fluid" alt="Wedding gallery" class="opaque" style="height:200%;">
             <div class="caption left-align">
                 <h1>
                     <!-- <small class="light text-lighten-3 hide-on-small-only">{% trans "Be invited to view our wedding photos :)" %}</small> -->
@@ -23,7 +23,7 @@
             </div>
         </li>
         <li>
-            <img src="{% static 'images/rsz_oczepiny.jpg' %}" alt="Wedding gallery" class="opaque" style="height:160%;">
+            <img src="{% static 'images/rsz_oczepiny.jpg' %}" class="img-fluid" alt="Wedding gallery" class="opaque" style="height:160%;">
             <div class="caption right-align">
                 <h1>
                     <!-- <small class="light text-lighten-3 hide-on-small-only">{% trans "Merry Christmas! :)" %}</small> -->
@@ -82,10 +82,11 @@
 
 <div class="container">
         <div class="row">
-            <a href="#" class="underline">
+            <a href="https://mega.nz/#!HK51RAqI!x9vkgYzsMufYBi-m8phIRyO2rCb39OLTChrz5DRwlvg" class="underline">
                 {% trans "Click here to download all the photos with highest resolution" %}
                 <img src="{% static 'images/download.png' %}" alt="Download all the albums" style="width:30px;height:30px;border:1;">
             </a>
+            <p style="color:red; font-size: 90%">{% trans "Password" %} {% trans ": christmas2018" %} </p>
         </div>
     </div>
 <hr>

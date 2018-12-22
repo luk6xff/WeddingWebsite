@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-22 13:45+0100\n"
+"POT-Creation-Date: 2018-12-22 18:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,7 +103,7 @@ msgstr "Potwierdź"
 msgid "Please enter your password below"
 msgstr "Wpisz hasło z SMS-a poniżej"
 
-#: photo_gallery/forms.py:20
+#: photo_gallery/forms.py:20 photo_gallery/templates/photos.html:89
 msgid "Password"
 msgstr "Hasło"
 
@@ -124,19 +124,19 @@ msgstr "Potwierdź hasło dostępu do galerii"
 msgid "Thank you for being a part of our wedding day 27.10.2018! :)"
 msgstr "Dzięki piękne że byliście z nami tego dnia :)"
 
-#: photo_gallery/templates/photos.html:22
+#: photo_gallery/templates/photos.html:21
 msgid "Be invited to view our wedding photos :)"
 msgstr "Zapraszamy do oglądania zdjęć :)"
 
-#: photo_gallery/templates/photos.html:30
+#: photo_gallery/templates/photos.html:29
 msgid "Merry Christmas! :)"
 msgstr "Wesołych Świąt! :)"
 
-#: photo_gallery/templates/photos.html:57
+#: photo_gallery/templates/photos.html:56
 msgid "More Images"
 msgstr "Więcej zdjęć"
 
-#: photo_gallery/templates/photos.html:60
+#: photo_gallery/templates/photos.html:59
 msgid "Download the album"
 msgstr "Pobierz album"
 
@@ -147,6 +147,10 @@ msgstr "Pobierz wszystkie albumy"
 #: photo_gallery/templates/photos.html:86
 msgid "Click here to download all the photos with highest resolution"
 msgstr "Tutaj możesz pobrać wszystkie zdjęcia w wysokiej rozdzielczości :)"
+
+#: photo_gallery/templates/photos.html:89
+msgid ": christmas2018"
+msgstr ""
 
 #: wedding/templates/home.html:12
 msgid "Justyna & Łukasz's wedding website"
