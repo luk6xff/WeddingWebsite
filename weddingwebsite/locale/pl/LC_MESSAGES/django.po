@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-21 21:23+0100\n"
+"POT-Creation-Date: 2018-12-22 11:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,13 +95,17 @@ msgid "Send confirmation"
 msgstr "Wyślij potwierdzenie"
 
 #: guests/templates/guests/rsvp_guests_num.html:21
-#: photo_gallery/templates/lockdown/form.html:31
+#: photo_gallery/templates/lockdown/form.html:28
 msgid "Submit"
 msgstr "Potwierdź"
 
 #: photo_gallery/forms.py:20
 msgid "Please enter your password below"
 msgstr "Wpisz hasło z SMS-a poniżej"
+
+#: photo_gallery/forms.py:20
+msgid "Password"
+msgstr "Hasło"
 
 #: photo_gallery/templates/layout.html:17
 #, fuzzy
@@ -146,6 +150,10 @@ msgstr "Pobierz album"
 msgid "Download all the albums"
 msgstr "Pobierz wszystkie albumy"
 
+#: photo_gallery/templates/photos.html:80
+msgid "Click here to download all the photos with highest resolution"
+msgstr "Tutaj możesz pobrać wszystkie zdjęcia w wysokiej rozdzielczości :)"
+
 #: wedding/templates/home.html:12
 msgid "Justyna & Łukasz's wedding website"
 msgstr "Strona weselna Justyny i Łukasza"
@@ -169,7 +177,7 @@ msgstr "Nasza historia"
 
 #: wedding/templates/home.html:31
 msgid "Photos"
-msgstr ""
+msgstr "Zdjęcia"
 
 #: wedding/templates/home.html:34
 msgid "Contact"
