@@ -17,7 +17,7 @@ class AlbumForm(forms.ModelForm):
 
 
 class LockdownPasswordForm(forms.Form):
-    password = forms.CharField(label=mark_safe("<p> {} </p>".format(_('Please enter your password below'))), required=True, widget=PasswordInput(render_value=False))
+    password = forms.CharField(label=mark_safe("<p> {} </p>".format(_('Please enter your password below'))), required=True, widget=PasswordInput(attrs={'placeholder': _('Password')}, render_value=False))
 
     def __init__(self, passwords=None, *args, **kwargs):
         """Initialize the form by setting the valid passwords."""

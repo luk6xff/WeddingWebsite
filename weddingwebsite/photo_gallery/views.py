@@ -91,7 +91,7 @@ def download_all_zipped_albums(request):
         logger.error("No albums in database!")
         raise Http404 
 
-    final_zip_file_name = "JustynaLukaszWeddingPhotos.zip"
+    final_zip_file_name = "Wesele27-10-2018.zip"
 
     # create binary buffer for all the buffers 
     albums_buffer = io.BytesIO()

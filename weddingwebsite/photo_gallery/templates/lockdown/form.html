@@ -13,31 +13,30 @@
 <link rel="stylesheet" href="{% static 'external/lockdownform.css' %}" type="text/css" /> 
 {% endblock %}
 
-
 {% block content %}
-<body id="LoginForm">
-  <div class="container">
-    <div class="login-form">
-      <div class="main-div">
-        <div class="panel">
-          <h2>{% trans "Confirm password" %}</h2>
-        </div>
-        {% if form %}
-        <form id="Login" action="" method="post">{% csrf_token %}
-          <div class="form-group">
-            <div class="form-group">
-                {{ form|bootstrap }}
+<body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+          <div class="card card-signin my-5">
+            <div class="card-body">
+              <h5 class="card-title text-center">{% trans "Confirm password" %}</h5>
+                <div class="form-label-group">
+                    {% if form %}
+                    <form id="Login" action="" method="post">{% csrf_token %}
+                          {{ form|bootstrap }}
+                          <input type="submit" class="btn btn-lg btn-primary btn-block" value='{% trans "Submit" %}'/>
+                        </form>
+                    {% endif %}
+                </div>
+                <hr class="my-4">
             </div>
-              <p><input type="submit" class="btn btn-lg btn-primary btn-block" value={% trans "Submit" %} /></p>
           </div>
-        </form>
-        {% endif %}
+        </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 {% endblock %}
-
 
 {% block js %}
   <script src="{% static 'bootstrap-4.0.0/dist/js/bootstrap.min.js' %}"></script>

@@ -18,7 +18,7 @@ urlpatterns = [
     url(r'^photos/download/all$', download_all_zipped_albums, name='download_all_zipped_albums'),
     url(r'^photos/download/(?P<album_name>[-\w]+)/$', download_zipped_album, name='download_zipped_album'),
     url(r'^favicon\.ico$', RedirectView.as_view(url='/static/icons/favicon.ico', permanent=True)),
-    url(r'^(?P<slug>[-\w]+)$', AlbumDetail.as_view(), name='album'),
+    url(r'^photos/(?P<slug>[-\w]+)$', AlbumDetail.as_view(), name='album'),
     # Auth related urls
     url(r'^accounts/login/$', auth_views.login, name='login'),
     url(r'^logout$', auth_views.logout, { 'next_page': '/', }, name='logout'),
