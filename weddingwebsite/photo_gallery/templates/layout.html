@@ -9,6 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> {% load staticfiles %} {% include 'material/includes/material_css.html' %}
     <link rel="shortcut icon" href="{%  static 'favicon.ico' %}"> {% block page_head %}{% endblock %}
     <link rel="stylesheet" href="{% static 'site.css' %}" type="text/css" /> {% block css %}{% endblock %}
+
+    <style>
+            a.underline:visited, a.underline:link {text-decoration: none;}
+            a.underline:hover, a.underline:active {text-decoration: underline;}
+    </style>
 </head>
 
 <body>

@@ -41,18 +41,23 @@
         <div class="col">
             <div class="card dpg-album-card">
                 <div class="card-image">
-                    <img src="{{ album.thumb.url }}" alt="{{ album.title }}" class="dpg-album-card-image" />
+                    <a href="{% url 'album' album.slug %}">
+                        <img src="{{ album.thumb.url }}" alt="{{ album.title }}" class="dpg-album-card-image" />
+                    </a>
                 </div>
                 <div class="card-content">
-                    <span class="card-title">{{ album.title }}</span>
+                    <a href="{% url 'album' album.slug %}" class="underline">
+                        <span class="card-title">{{ album.title }}</span>
                     <!-- <p>{{ album.description|truncatechars:120 }}</p> -->
-                </div>
-                <div class="card-action">
-                    <a href="{% url 'album' album.slug %}">
-                        {% trans "More Images" %} 
                     </a>
-                    <a href="photos/download/{{ album.slug }}">
-                        <p style="color:blue; font-size:10px;">{% trans "Download the album" %} 
+                </div>
+                <hr/>
+                <div class="card-content">
+                    <!--<a href="{% url 'album' album.slug %}">
+                        {% trans "More Images" %} 
+                    </a> -->
+                    <a href="photos/download/{{ album.slug }}" class="underline">
+                        <p style="color:blue;">{% trans "Download the album" %} 
                             <img src="{% static 'images/download.png' %}" alt="Download album" style="width:20px;height:20px;border:1;"></p>
                     </a>
                 </div>
@@ -65,7 +70,8 @@
 
 <div class="container">
     <div class="row">
-        <a href="photos/download/all">
+
+        <a href="photos/download/all" class="underline">
             {% trans "Download all the albums" %}
             <img src="{% static 'images/download.png' %}" alt="Download all the albums" style="width:30px;height:30px;border:1;">
         </a>
@@ -76,7 +82,7 @@
 
 <div class="container">
         <div class="row">
-            <a href="#">
+            <a href="#" class="underline">
                 {% trans "Click here to download all the photos with highest resolution" %}
                 <img src="{% static 'images/download.png' %}" alt="Download all the albums" style="width:30px;height:30px;border:1;">
             </a>
